@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery - Kingfisher Kitchens | Our Completed Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gray-orange-50': '#FDFCFB',
+                        'gray-orange-100': '#F7F5F2',
+                        'gray-orange-200': '#E8E2DB',
+                        'gray-orange-300': '#D4CCC0',
+                        'gray-orange-400': '#B8AE9A',
+                        'gray-orange-500': '#91795F',
+                        'gray-orange-600': '#7A6651',
+                        'gray-orange-700': '#665544',
+                        'brown-900': '#91795F',
+                        'gray-orange-800': '#524437',
+                        'gray-orange-900': '#3E342A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-orange-50 text-gray-orange-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-gray-orange-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+               <div class="flex items-center">
+                       <div class="w-20 h-10 bg-brown-50 rounded-lg mr-3 flex items-center justify-center">
+                       <img src="logo.svg" alt="logo" width="300">
+                    </div>
+                    <h1 class="text-2xl font-bold text-brown-800">KINGFISHER KITCHENS</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="bg-gray-orange-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-orange-700 transition-colors">
+                        ← Back to Main Site
+                    </a>
+                    <a href="tel:0832950610" class="text-gray-orange-600 hover:text-gray-orange-800 font-semibold">
+                        📞 083 295 0610
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-orange-100 to-gray-orange-200 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-5xl font-bold text-gray-orange-900 mb-6">Our Portfolio</h2>
+            <p class="text-xl text-gray-orange-700 mb-8 max-w-3xl mx-auto">
+                Explore our collection of completed projects showcasing premium built-in kitchens, bedrooms, and bathrooms across Cape Town
+            </p>
+           <div class="flex flex-wrap justify-center gap-3 mb-8">
+              <button onclick="filterGallery('all')" class="filter-btn active bg-gray-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-orange-700 transition-colors">
+                  All Projects
+              </button>
+              <button onclick="filterGallery('kitchen')" class="filter-btn bg-white text-gray-orange-600 px-6 py-3 rounded-lg font-semibold border-2 border-gray-orange-600 hover:bg-gray-orange-50 transition-colors">
+                  Kitchens
+              </button>
+              <button onclick="filterGallery('bedroom')" class="filter-btn bg-white text-gray-orange-600 px-6 py-3 rounded-lg font-semibold border-2 border-gray-orange-600 hover:bg-gray-orange-50 transition-colors">
+                  Bedrooms
+              </button>
+              <button onclick="filterGallery('bathroom')" class="filter-btn bg-white text-gray-orange-600 px-6 py-3 rounded-lg font-semibold border-2 border-gray-orange-600 hover:bg-gray-orange-50 transition-colors">
+                  Bathrooms
+              </button>
+              <button onclick="filterGallery('extras')" class="filter-btn bg-white text-gray-orange-600 px-6 py-3 rounded-lg font-semibold border-2 border-gray-orange-600 hover:bg-gray-orange-50 transition-colors">
+                  More projects
+              </button>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Kitchen Projects -->
+                <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Abrahamse (4).JPG" 
+                             alt="Modern White Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Modern White Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Contemporary design with marble countertops</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Abrahamse (1).JPG"
+                             alt="Kitchen Island Design" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Kitchen Island Design</h4>
+                            <p class="text-gray-orange-600 text-sm">Central hub with integrated storage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Worwood 22.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+                  <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/WZUC8348.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/XKLP3148.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Worwood 7.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                   <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Summer Place (3).JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Spooner 18.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Shortridge 3.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                   <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Atholl 35.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Bolton (3).JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Beukes (6).JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Brink 9.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Brock 8.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/IMG_2323.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/IMG_2385.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Engelbrecht 17.JPG"
+                             alt="Traditional Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Traditional Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Classic wooden design with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Rose 1.JPG" 
+                             alt="Compact Kitchen Design" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Compact Kitchen Design</h4>
+                            <p class="text-gray-orange-600 text-sm">Efficient design with maximum storage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item kitchen group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Deacon (5).JPG" 
+                             alt="Compact Kitchen Design" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Compact Kitchen Design</h4>
+                            <p class="text-gray-orange-600 text-sm">Efficient design with maximum storage</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item kitchen group cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80', 'Luxury Kitchen', 'High-end kitchen with premium appliances and custom cabinetry')">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Jonkers (1).JPG" 
+                             alt="Luxury Kitchen" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Luxury Kitchen</h4>
+                            <p class="text-gray-orange-600 text-sm">Premium appliances with custom cabinetry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bedroom Projects ============================================================= -->
+
+                  
+                    <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Smith 2.JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Bougard 28.JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/George & Inge 2.JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Space-maximizing custom solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Malan (4).JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+
+                </div>
+                    <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/PBC 2.jpg" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                 
+                <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Brock 11.JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                    
+                <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Brock 12.JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/Hardy (1).JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="gallery-item bedroom group cursor-pointer" >
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src= "KingfisherKitchens Content/IMG_2231.JPG" 
+                             alt="Walk-in Wardrobe" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Built-in Bedroom Storage</h4>
+                            <p class="text-gray-orange-600 text-sm">Organized luxury storage solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bathroom Projects========================================================  -->
+
+                <div class="gallery-item bathroom group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Hardy (15).JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">beautiful Bathroom</h4>
+                            <p class="text-gray-orange-600 text-sm">Premium bathroom design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item bathroom group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Alan - Hermitage.jpg" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">beautiful Bathroom</h4>
+                            <p class="text-gray-orange-600 text-sm">Premium bathroom design</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-item bathroom group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Bentley 3.jpg" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">beautiful Bathroom</h4>
+                            <p class="text-gray-orange-600 text-sm">Premium bathroom design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item bathroom group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Boucher 19.JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">beautiful Bathroom</h4>
+                            <p class="text-gray-orange-600 text-sm">Premium bathroom design</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="gallery-item bathroom group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Gous  (1).JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">beautiful Bathroom</h4>
+                            <p class="text-gray-orange-600 text-sm">Premium bathroom design</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item bathroom group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Coetzee 8.jpg" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">beautiful Bathroom</h4>
+                            <p class="text-gray-orange-600 text-sm">Premium bathroom design</p>
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- More projects ============================================================= -->
+
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Bayley 1.JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Abrahamse (3).JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Boucher 23.JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/George & Inge 1.JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/IMG_2227.JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Kelly (5).JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Parker 6.JPG" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item extras group cursor-pointer">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="KingfisherKitchens Content/Worwood 13.jpg" 
+                             alt="Luxury Spa Bathroom" 
+                             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                        <div class="p-4">
+                            <h4 class="font-bold text-gray-orange-900 mb-2">Efficient storage</h4>
+                            <p class="text-gray-orange-600 text-sm">More strage compatments</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+    <a href="index.html" class="inline-block bg-gray-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-orange-700 transition-colors shadow-lg">
+        Back to Home
+    </a>
+</div>
+
+        </div>
+    </section>
+
+ <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brown-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold mb-4">Let's Create Together</h3>
+                <p class="text-lg text-brown-200 max-w-2xl mx-auto">
+                    Ready to transform your space with handcrafted excellence? Get in touch for your free consultation
+                </p>
+            </div>
+     <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-8">Get In Touch</h4>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <a href="tel:0832950610" class="text-brown-200 hover:text-white transition-colors text-lg">083 295 0610</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <a href="mailto:info@kingfisherkitchens.co.za" class="text-brown-200 hover:text-white transition-colors">info@kingfisherkitchens.co.za</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-brown-200">Pinelands, Cape Town & Surrounding Areas</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Operating Hours</p>
+                                <p class="text-brown-200">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h5 class="text-xl font-bold mb-4">Follow Our Work</h5>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com/kingfisherkitchens" target="_blank" class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center hover:bg-brown-700 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/kingfisher_kitchens" target="_blank" class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center hover:bg-brown-700 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297L3.323 17.49c.875.807 2.026 1.297 3.323 1.297h7.136c1.297 0 2.448-.49 3.323-1.297l-1.803-1.799c-.875.807-2.026 1.297-3.323 1.297H8.449z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+    
+     <!-- Footer -->
+    <footer class="bg-brown-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-8 h-8 bg-brown-600 rounded-lg mr-3 flex items-center justify-center">
+                    <!-- <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                    </svg> -->
+                </div>
+                <span class="text-xl font-bold">KINGFISHER KITCHENS</span>
+            </div>
+            <p class="text-brown-200">&copy; 2024 Kingfisher Kitchens. All rights reserved.</p>
+            <p class="text-brown-300 mt-2">Handcrafting beautiful built-in solutions in Cape Town with pride and precision</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update button states
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-gray-orange-600', 'text-white');
+                btn.classList.add('bg-white', 'text-gray-orange-600', 'border-2', 'border-gray-orange-600');
+            });
+            
+            // event.target.classList.add('active', 'bg-gray-orange-600', 'text-white');
+            // event.target.classList.remove('bg-white', 'text-gray-orange-600', 'border-2', 'border-gray-orange-600');
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.8)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Modal functionality
+        function openModal(imageSrc, title, description) {
+            const modal = document.getElementById('image-modal');
+            const modalImage = document.getElementById('modal-image');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            
+            modalImage.src = imageSrc;
+            modalImage.alt = title;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('image-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Close modal on background click
+        document.getElementById('image-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Load more images functionality
+        let currentImageCount = 14; // Current number of images shown
+        const totalImages = 50; // Total images available
+
+        function loadMoreImages() {
+            // This is a demo function - in a real implementation, you would load more images from your server
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            
+            if (currentImageCount >= totalImages) {
+                loadMoreBtn.style.display = 'none';
+                return;
+            }
+            
+            // Simulate loading more images
+            loadMoreBtn.textContent = 'Loading...';
+            loadMoreBtn.disabled = true;
+            
+            setTimeout(() => {
+                // In a real implementation, you would append new gallery items here
+                currentImageCount += 12;
+                
+                if (currentImageCount >= totalImages) {
+                    loadMoreBtn.textContent = 'All Projects Loaded';
+                    loadMoreBtn.disabled = true;
+                } else {
+                    loadMoreBtn.textContent = 'Load More Projects';
+                    loadMoreBtn.disabled = false;
+                }
+            }, 1000);
+        }
+
+        // Initialize gallery animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            galleryItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97e9ab9960770700',t:'MTc1Nzc4Nzc0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

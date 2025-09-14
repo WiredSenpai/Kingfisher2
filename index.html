@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingfisher Kitchens - Premium Built-in Solutions | Cape Town</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                    // The names and the colors do not correspond
+                        'brown-50': '#FDFCFB',
+                        'brown-100': '#F7F3F0',
+                        'brown-200': '#E8DDD4',
+                        'brown-300': '#D4C4B0',
+                        'brown-400': '#91795F',
+                        'brown-500': '#91795F',
+                        'brown-600': '#91795F',
+                        'brown-700': '#91795F',
+                        'brown-800': '#91795F',
+                        'brown-900': '#91795F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brown-50 text-brown-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-brown-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                       <div class="w-20 h-10 bg-brown-50 rounded-lg mr-3 flex items-center justify-center">
+                       <img src="logo.svg" alt="logo" width="300">
+                    </div>
+                    <h1 class="text-2xl font-bold text-brown-800">KINGFISHER KITCHENS</h1>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#services" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                        <a href="#about" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#materials" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Materials</a>
+                        <a href="#references" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Reviews</a>
+                        <a href="#gallery" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Gallery</a>
+                        <a href="portfolio.html" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Portfolio</a>
+                        <a href="#process" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Process</a>
+                        <a href="#contact" class="text-brown-600 hover:text-brown-800 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-brown-600 hover:text-brown-800">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-brown-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Home</a>
+                <a href="#services" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Services</a>
+                <a href="#about" class="block px-3 py-2 text-brown-600 hover:text-brown-800">About</a>
+                <a href="#materials" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Materials</a>
+                <a href="#references" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Reviews</a>
+                <a href="portfolio.html" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Portfolio</a>
+                <a href="#gallery" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Gallery</a>
+                <a href="#process" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Process</a>
+                <a href="#contact" class="block px-3 py-2 text-brown-600 hover:text-brown-800">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-brown-50 to-brown-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-5xl md:text-6xl font-bold text-brown-900 mb-6">
+                        Crafted with <span class="text-brown-600">Precision</span>
+                    </h2>
+                    <p class="text-xl md:text-2xl text-brown-700 mb-8">
+                        Premium built-in kitchens, bedrooms, and bathrooms that blend timeless craftsmanship with modern functionality
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-brown-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brown-700 transition-colors shadow-lg">
+                            Get Free Quote
+                        </a>
+                        <a href="tel:0832950610" class="bg-white text-brown-600 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-brown-600 hover:bg-brown-50 transition-colors shadow-lg">
+                            📞 083 295 0610
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="kitchen_photo.jpg" 
+                         alt="Modern built-in kitchen with white cabinets and marble countertops" 
+                         class="w-full h-auto rounded-xl shadow-2xl"
+                         onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-brown-900 mb-4">Our Complete Service</h3>
+                <p class="text-lg text-brown-700 max-w-2xl mx-auto">
+                    From free consultation to final installation, we handle every aspect of your built-in project
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Free Consultation Card -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center">
+                    <div class="w-16 h-16 bg-brown-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Free Consultations</h4>
+                    <p class="text-brown-700 mb-4">Comprehensive consultations and detailed quotations at no cost to you.</p>
+                    <div class="bg-brown-50 rounded-lg p-4">
+                        <p class="text-brown-800 font-semibold text-sm">✓ No obligation quotes</p>
+                        <p class="text-brown-800 font-semibold text-sm">✓ Expert advice included</p>
+                    </div>
+                </div>
+
+                <!-- 3D Drawings Card -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center">
+                    <div class="w-16 h-16 bg-brown-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">3D Visualizations</h4>
+                    <p class="text-brown-700 mb-4">Every quotation includes computerized 3D drawings of your proposed units.</p>
+                    <div class="bg-brown-50 rounded-lg p-4">
+                        <p class="text-brown-800 font-semibold text-sm">✓ See before you buy</p>
+                        <p class="text-brown-800 font-semibold text-sm">✓ Detailed visual plans</p>
+                    </div>
+                </div>
+
+                <!-- Contractor Referrals Card -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center">
+                    <div class="w-16 h-16 bg-brown-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Trusted Referrals</h4>
+                    <p class="text-brown-700 mb-4">Need builders, plumbers, tilers, or electricians? We refer reliable contractors we've worked with.</p>
+                    <div class="bg-brown-50 rounded-lg p-4">
+                        <p class="text-brown-800 font-semibold text-sm">✓ Vetted professionals</p>
+                        <p class="text-brown-800 font-semibold text-sm">✓ Proven track record</p>
+                    </div>
+                </div>
+
+                <!-- Project Coordination Card -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center">
+                    <div class="w-16 h-16 bg-brown-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Project Coordination</h4>
+                    <p class="text-brown-700 mb-4">We coordinate all contractors to streamline your project.</p>
+                    <div class="bg-brown-50 rounded-lg p-4">
+                        <p class="text-brown-800 font-semibold text-sm">✓ Seamless planning</p>
+                        <p class="text-brown-800 font-semibold text-sm">✓ We manage contractors for you</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What We Build Section -->
+            <div class="mt-20">
+                <div class="text-center mb-12">
+                    <h4 class="text-3xl font-bold text-brown-900 mb-4">What We Build</h4>
+                    <p class="text-lg text-brown-700">Custom built-in solutions for every room in your home</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Kitchen Card -->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🍳</div>
+                     
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Kitchens</h5>
+                        <p class="text-brown-700">We offer complete kitchens from start to finish.</p>
+                        <p class="text-brown-700">Whether that is a complete gut and replace or only a minor upgrade.</p>
+                        <p class="text-brown-700">We do lots of facelifts where the doors and cuoters are replaced.</p>
+                        <p class="text-brown-700">Repair work is a large part of our day to day work.</p>
+                        <p class="text-brown-700">That would include replacing water damaged cupboards or that pesky drawer that no longer pulls out.</p>
+                    </div>
+
+                    <!-- Bedroom Card -->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🛏️</div>
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Bedrooms</h5>
+                       <p class="text-brown-700">We do full cupboards from single door units to walk in closets.</p>
+                       <p class="text-brown-700">Drawer units.</p>
+                       <p class="text-brown-700">Desks with Bookshelves.</p>
+                    </div>
+
+                    <!-- Bathroom Card -->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🚿</div>
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Bathroom vanity</h5>
+                        <p class="text-brown-700">Vanity units that sit below your basin.</p>
+                        <p class="text-brown-700">Well mounted units with mirror doors.</p>
+                        <p class="text-brown-700">Linen cupboards.</p>
+                    </div>
+
+                     <!-- Laminate Flooring card -->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🏠</div>
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Laminate Flooring</h5>
+                        <p class="text-brown-700">Installation of clip type laminate and vinyl Flooring.</p>
+
+                    </div>
+                    
+                      <!-- Servicing of Cupboards card-->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🛠️</div>
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Servicing of Cupboards</h5>
+                        <p class="text-brown-700">All cupboads require a minor service from time to time.</p>
+                       <p class="text-brown-700">This includes the replacing of hinges and drawer runners.</p>
+                       <p class="text-brown-700">Adjustment of hinges to realign doors.</p>
+                       <p class="text-brown-700">Replacing of water damaged cupboards, drawers and shelves.</p>
+                    </div>
+
+                     <!-- Rental properties card -->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🏘️</div>
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Rental properties</h5>
+                        <p class="text-brown-700">General maintenance and repairs to rental flats.</p>
+                        <p class="text-brown-700">This includes the painting of all interior walls and ceilings.</p>
+                        <p class="text-brown-700">Servicing and repairs to Kitchen and Bedroom cupboards.</p>
+                        <p class="text-brown-700">General handyman items - hanging of curtain rails, towel rails etc.</p>
+
+                    </div>
+
+                    <!-- Approach to projects card -->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">📝</div>
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Approach to projects</h5>
+                        <p class="text-brown-700">Initial contact to discuss scope of work required.</p>
+                        <p class="text-brown-700">Site meeting to measure up the space and discuss what is needed.</p>
+                        <p class="text-brown-700">Upon approval the colours and materials are finalised and ordered.</p>
+                        <p class="text-brown-700">Deposit is paid upfront with the balance due upon completion of the installation.</p>
+                        <p class="text-brown-700">Installation dates are confirmed once the material orders are placed.</p>
+                        <p class="text-brown-700">Materials are delivered from suppliers and installations start on site.</p>
+                        <p class="text-brown-700">Upon completion of the installation a final site inspection is completed and signed off.</p>
+                        <p class="text-brown-700">Client has 1 year gaurantee against defective materials and workmanship, excluding negligence amd water damage.</p>
+
+                    </div>
+
+                    <!-- Hardware items card -->
+                    <div class="bg-brown-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-4">🔩</div>
+                        <h5 class="text-xl font-bold text-brown-900 mb-3">Hardware items</h5>
+                        <p class="text-brown-700">We use Blum hinges and drawer systems due to the quality of the product and the relaibility it offers the client.</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brown-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-brown-900 mb-4">About Kingfisher Kitchens</h3>
+                <p class="text-lg text-brown-700 max-w-2xl mx-auto">
+                    Your trusted partner in creating beautiful, functional built-in solutions
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    
+                     <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brown-900 mb-3">Vision and mission</h4>
+                                <p class="text-brown-700">Our mission is to provide excellent service in an industry where service is often lacking.
+                                    Providing installations that we would be proud to have in our own homes.
+                                    We strive to work with quality materials that would be of benefit to a clients home and add value to the property.
+                                    Integrity and honesty is a large part of the success we have had over a number of years.
+                                    Providing a service that is professional and efficient.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brown-900 mb-3">Expert Craftsmen</h4>
+                                <p class="text-brown-700">Our installation experts are all qualified, very talented and dedicated to providing the highest quality of work.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brown-900 mb-3">Personal Service Guarantee</h4>
+                                <p class="text-brown-700">As an owner-run business we guarantee personal service and individual attention, from the initial consultation to the completed installation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brown-900 mb-3">Owner Supervised</h4>
+                                <p class="text-brown-700">Every installation is owner supervised, to ensure your satisfaction with the final product.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brown-900 mb-3">Custom Built Solutions</h4>
+                                <p class="text-brown-700">All our installations are custom built to suit your requirements, whether it's a single unit or an entire kitchen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brown-900 mb-3">Like Our Own Home</h4>
+                                <p class="text-brown-700">Every installation is done as though it were in their own homes.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-brown-900 mb-3">Story</h4>
+                                <p class="text-brown-700">Kingfisher Kitchens started in 2009</p>
+                                <p class="text-brown-700">I studied Mechanical draughting after school but felt that it lacked the practical side of woodwork that I enjoyed.
+                                   I worked in the clothing industry for 10 years before turning my hobby into my full time job.</p>
+                                <p class="text-brown-700">Moving to Cape Town in 2009 meant that I had an opportunity to change carreer paths and follow 2 of my passions in life.											
+                                    Technical drawings and working with my hands have always been 2 things I really enjoy.											
+                                    Starting a Kitchen renovation company gave me opportuinity to use my drawing and practical woodwork skills on a daily basis.</p>
+                                <p class="text-brown-700">We started small with me doing all the installations during the day and quoting at night.						
+                                    Eventually we got to the point of hiring an artisan to come in and work on site with me in 2011, and a second one later that year.						
+                                    By 2012 we had a staff compliment of 2 full time employees and me filling in the gaps on site.						
+                                    This gave me the opportunity to expand the business and be able to bring in more clients during the day.						
+                                    Site consultations and quotes could be done during the day as my staff were on site doing the installations.						
+                                    By 2016 we had a staff compliment of 3 full time employees. 						
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brown-600 rounded-xl p-8 text-white shadow-lg">
+                        <h4 class="text-2xl font-bold mb-4">Why Choose Us?</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <span class="text-brown-200 mr-3">✓</span>
+                                Owner-operated for personal attention
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-brown-200 mr-3">✓</span>
+                                Qualified and experienced craftsmen
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-brown-200 mr-3">✓</span>
+                                Custom solutions for every space
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-brown-200 mr-3">✓</span>
+                                Quality guaranteed on every project
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials & Finishes Section -->
+    <section id="materials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-brown-900 mb-4">Premium Materials & Finishes</h3>
+                <p class="text-lg text-brown-700 max-w-2xl mx-auto">
+                    We use only A-grade materials and premium hardware to ensure your investment lasts for years to come
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Finishes Available -->
+                <div class="space-y-8">
+                    <div class="bg-brown-50 rounded-xl p-8">
+                        <h4 class="text-2xl font-bold text-brown-900 mb-6 flex items-center">
+                            <div class="w-10 h-10 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            Finish Options
+                        </h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">Melamine</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">PVC Wrap</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">Veneer</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">Duco & Paint Techniques</span>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">Framed Glass Doors</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">Solid Wood</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">Granite Countertops</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-brown-600 mr-3">✓</span>
+                                    <span class="text-brown-800">Caesarstone & More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brown-600 rounded-xl p-8 text-white">
+                        <h4 class="text-2xl font-bold mb-4 flex items-center">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-brown-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            1-Year Guarantee
+                        </h4>
+                        <p class="text-brown-100">All installations are guaranteed for 1-year against defective materials and workmanship (not against negligence or water damage).</p>
+                    </div>
+                </div>
+
+                <!-- Quality Materials -->
+                <div class="space-y-8">
+                    <div class="bg-white border-2 border-brown-200 rounded-xl p-8">
+                        <h4 class="text-2xl font-bold text-brown-900 mb-6 flex items-center">
+                            <div class="w-10 h-10 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            A-Grade Materials Only
+                        </h4>
+                        <div class="space-y-4">
+                            <p class="text-brown-700">We use only the best grades of raw materials and hardware, to guarantee peace of mind and longevity of your investment, we only use:</p>
+                            <div class="bg-brown-50 rounded-lg p-6">
+                                <div class="space-y-3">
+                                    <div class="flex items-center">
+                                        <span class="text-brown-600 mr-3 text-xl">🏆</span>
+                                        <span class="text-brown-800 font-semibold">A-Grade Raw Materials</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-brown-600 mr-3 text-xl">🔧</span>
+                                        <span class="text-brown-800 font-semibold">Bloom Hinges & Drawer Runners</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-brown-600 mr-3 text-xl">🛡️</span>
+                                        <span class="text-brown-800 font-semibold">Premium Hardware Throughout</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brown-100 rounded-xl p-8">
+                        <h4 class="text-xl font-bold text-brown-900 mb-4 flex items-center">
+                            <div class="w-8 h-8 bg-brown-600 rounded-full flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            Water Protection System
+                        </h4>
+                        <p class="text-brown-700">All floor standing units are supported by adjustable plastic legs, concealed by cabinet skirting. In the event of a water leak, these legs protect the cabinet carcasses from damage, limiting damage to the easily replaceable skirting only.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer References Section -->
+    <section id="references" class="py-20 bg-brown-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-brown-900 mb-4">What Our Clients Say</h3>
+                <p class="text-lg text-brown-700 max-w-2xl mx-auto">
+                    Don't just take our word for it - hear from satisfied customers who've experienced our craftsmanship firsthand
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Shaun's Testimonial -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">S</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brown-900">Shaun</h5>
+                            <p class="text-brown-600 text-sm">Kitchen & Pantry Project</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-3">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <p class="text-brown-700 italic">"From the outset we found Kevin very easy to work with. He understood our design goals and budget, and contributed useful insights we hadn't considered. Kevin's workmanship is of exceptionally high standard. He exceeded our expectations in coordinating with other contractors, completed quickly and within budget."</p>
+                    </div>
+                    <div class="text-brown-600 text-sm">
+                        <strong>Project:</strong> Kitchen & Pantry Renovation (June 2010)
+                    </div>
+                </div>
+
+                <!-- Gary's Testimonial -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">G</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brown-900">Gary</h5>
+                            <p class="text-brown-600 text-sm">Multiple Projects</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-3">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <p class="text-brown-700 italic">"Kevin has done numerous cupboard jobs for us - modified old cupboards, made new ones, designed a whole kitchen and crafted beautiful window seats. He is a perfectionist and his work is excellent. He works quietly and cleans up behind himself. His quotes are competitive and he is completely trustworthy. I gave him a key to my home."</p>
+                    </div>
+                    <div class="text-brown-600 text-sm">
+                        <strong>Projects:</strong> Kitchen Design, Window Seats, Cupboard Modifications
+                    </div>
+                </div>
+
+                <!-- Brenda's Testimonial -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">B</span>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brown-900">Brenda</h5>
+                            <p class="text-brown-600 text-sm">Main House Kitchen</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-3">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <p class="text-brown-700 italic">"I was given Kevin's details by a close friend, and what a find! From beginning to end Kevin was the most professional, pleasant, and timeous contractor I have ever had. I was so impressed with his delivery, assembly and work ethic that I immediately commissioned him for my main house kitchen. Once again a first class job. I recommend his workmanship to anyone requiring cupboards."</p>
+                    </div>
+                    <div class="text-brown-600 text-sm">
+                        <strong>Projects:</strong> Multiple Kitchen Installations
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <div class="bg-brown-600 rounded-xl p-8 text-white inline-block">
+                    <h4 class="text-xl font-bold mb-3">Curious About Our Work?</h4>
+                    <p class="mb-4">Take a peek at projects we’re proud of.</p>
+                    <a href="portfolio.html" class="bg-white text-brown-600 px-6 py-3 rounded-lg font-semibold hover:bg-brown-50 transition-colors">
+                         Explore Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-brown-900 mb-4">Our Work Speaks</h3>
+                <p class="text-lg text-brown-700 max-w-2xl mx-auto">
+                    Every project tells a story of craftsmanship, attention to detail, and customer satisfaction
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="kitchen_photo.jpg" 
+                         alt="Modern kitchen with white cabinets" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    <div class="p-6">
+                        <h5 class="text-xl font-bold text-brown-900 mb-2">Modern Kitchen Design</h5>
+                        <p class="text-brown-700">Sleek lines meet functional elegance</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="bedroom.jpg" 
+                         alt="Walk-in wardrobe with organized storage" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    <div class="p-6">
+                        <h5 class="text-xl font-bold text-brown-900 mb-2">Bedroom cupboards And Storage</h5>
+                        <p class="text-brown-700">Luxury storage solutions</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="bathroom.jpg" 
+                         alt="Modern bathroom vanity" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    <div class="p-6">
+                        <h5 class="text-xl font-bold text-brown-900 mb-2">Bathroom Vanity</h5>
+                        <p class="text-brown-700">Elegant bathroom solutions</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="shelves 2.jpg" 
+                         alt="Contemporary kitchen island" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    <div class="p-6">
+                        <h5 class="text-xl font-bold text-brown-900 mb-2">Book Shelves And Desks</h5>
+                        <p class="text-brown-700">Custom-designed bookshelves and desks that combine functionality with style to maximize your space</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+                    <img src="shelves.jpg" 
+                         alt="Built-in bedroom storage" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                    <div class="p-6">
+                        <h5 class="text-xl font-bold text-brown-900 mb-2">Other Storage Solutions</h5>
+                        <p class="text-brown-700">Tailored storage solutions to keep your home or office organized and clutter-free.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-brown-900 mb-4">Our Crafting Process</h3>
+                <p class="text-lg text-brown-700 max-w-2xl mx-auto">
+                    From concept to completion, we guide you through every step of creating your dream space
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brown-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg">1</div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Consultation</h4>
+                    <p class="text-brown-700">This is done at your home to discuss the details of your renovation.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brown-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg">2</div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Design </h4>
+                    <p class="text-brown-700">We supply 3D drawings of your space that can be tweaked to suit your needs.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brown-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg">3</div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Quotation </h4>
+                    <p class="text-brown-700">Our quotations are all-inclusive so you are not surprised by any additional costs.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brown-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg">4</div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Manufacture</h4>
+                    <p class="text-brown-700">We only source the best quality materials to ensure the longevity of your investment.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brown-400 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold shadow-lg">5</div>
+                    <h4 class="text-xl font-bold text-brown-900 mb-4">Installation</h4>
+                    <p class="text-brown-700">Our installation team does all assmbly on site to ensure the perfect fit to your space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brown-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold mb-4">Let's Create Together</h3>
+                <p class="text-lg text-brown-200 max-w-2xl mx-auto">
+                    Ready to transform your space with handcrafted excellence? Get in touch for your free consultation
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-8">Get In Touch</h4>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <a href="tel:0832950610" class="text-brown-200 hover:text-white transition-colors text-lg">083 295 0610</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <a href="mailto:info@kingfisherkitchens.co.za" class="text-brown-200 hover:text-white transition-colors">info@kingfisherkitchens.co.za</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-brown-200">Pinelands, Cape Town & Surrounding Areas</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Operating Hours</p>
+                                <p class="text-brown-200">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h5 class="text-xl font-bold mb-4">Follow Our Work</h5>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com/kingfisherkitchens" target="_blank" class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center hover:bg-brown-700 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/kingfisher_kitchens" target="_blank" class="w-12 h-12 bg-brown-600 rounded-full flex items-center justify-center hover:bg-brown-700 transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297L3.323 17.49c.875.807 2.026 1.297 3.323 1.297h7.136c1.297 0 2.448-.49 3.323-1.297l-1.803-1.799c-.875.807-2.026 1.297-3.323 1.297H8.449z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <!-- <div class="bg-white rounded-xl p-8 text-brown-800 shadow-2xl">
+                    <h4 class="text-2xl font-bold text-brown-900 mb-6">Start Your Project</h4>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-brown-700 mb-2">Full Name *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-brown-300 rounded-lg focus:ring-2 focus:ring-brown-600 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-brown-700 mb-2">Phone Number *</label>
+                            <input type="tel" required class="w-full px-4 py-3 border border-brown-300 rounded-lg focus:ring-2 focus:ring-brown-600 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-brown-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-brown-300 rounded-lg focus:ring-2 focus:ring-brown-600 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-brown-700 mb-2">Service Needed *</label>
+                            <select required class="w-full px-4 py-3 border border-brown-300 rounded-lg focus:ring-2 focus:ring-brown-600 focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="kitchen">🍳 Built-in Kitchen</option>
+                                <option value="bedroom">🛏️ Built-in Bedroom</option>
+                                <option value="bathroom">🚿 Built-in Bathroom</option>
+                                <option value="multiple">🏠 Multiple Services</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-brown-700 mb-2">Tell Us About Your Vision</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-brown-300 rounded-lg focus:ring-2 focus:ring-brown-600 focus:border-transparent" placeholder="Describe your dream space, style preferences, and any specific requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-brown-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-brown-700 transition-colors shadow-lg">
+                            🚀 Request Free Consultation
+                        </button>
+                    </form>
+                    
+                    <div id="form-message" class="mt-4 p-4 rounded-lg hidden">
+                        <p class="text-center font-semibold"></p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-8 h-8 bg-brown-600 rounded-lg mr-3 flex items-center justify-center">
+                    <!-- <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                    </svg> -->
+                </div>
+                <span class="text-xl font-bold">KINGFISHER KITCHENS</span>
+            </div>
+            <p class="text-brown-200">&copy; 2024 Kingfisher Kitchens. All rights reserved.</p>
+            <p class="text-brown-300 mt-2">Handcrafting beautiful built-in solutions in Cape Town with pride and precision</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const messageDiv = document.getElementById('form-message');
+            const messageParagraph = messageDiv.querySelector('p');
+            
+            // Show demo message
+            messageDiv.className = 'mt-4 p-4 rounded-lg bg-green-100 border border-green-300';
+            messageParagraph.className = 'text-center font-semibold text-green-800';
+            messageParagraph.textContent = '🎉 Thank you for your interest! We\'ll contact you within 24 hours to schedule your free consultation.';
+            
+            // Reset form
+            this.reset();
+            
+            // Hide message after 6 seconds
+            setTimeout(() => {
+                messageDiv.classList.add('hidden');
+            }, 6000);
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+
+        // Add subtle animation to service cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.querySelectorAll('.bg-white.rounded-xl.shadow-lg').forEach(card => {
+            card.style.transform = 'translateY(20px)';
+            card.style.opacity = '0';
+            card.style.transition = 'transform 0.6s ease, opacity 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974e60ed212e41e2',t:'MTc1NjE1OTM5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+
