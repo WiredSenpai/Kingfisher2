@@ -11,16 +11,16 @@
                 extend: {
                     colors: {
                         'gray-orange-50': '#FDFCFB',
-                        'gray-orange-100': '#F7F5F2',
-                        'gray-orange-200': '#E8E2DB',
-                        'gray-orange-300': '#D4CCC0',
-                        'gray-orange-400': '#B8AE9A',
-                        'gray-orange-500': '#91795F',
-                        'gray-orange-600': '#7A6651',
-                        'gray-orange-700': '#665544',
-                        'brown-900': '#91795F',
-                        'gray-orange-800': '#524437',
-                        'gray-orange-900': '#3E342A'
+                        'gray-orange-100': '#FFFFF',
+                        'gray-orange-200': '#F28C28',
+                        'gray-orange-300': '#866C4A',
+                        'gray-orange-400': '#866C4A',
+                        'gray-orange-500': '#5E9918',
+                        'gray-orange-600': '#5E9918',
+                        'gray-orange-700': '#5E9918',
+                        'brown-900': '#008080',
+                        'gray-orange-800': '#008080',
+                        'gray-orange-900': '#008080'
                     }
                 }
             }
@@ -28,27 +28,35 @@
     </script>
 </head>
 <body class="bg-gray-orange-50 text-gray-orange-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-gray-orange-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-               <div class="flex items-center">
-                       <div class="w-20 h-10 bg-brown-50 rounded-lg mr-3 flex items-center justify-center">
-                       <img src="logo.svg" alt="logo" width="300">
-                    </div>
-                    <h1 class="text-2xl font-bold text-brown-800">KINGFISHER KITCHENS</h1>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="bg-gray-orange-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-orange-700 transition-colors">
-                        ← Back to Main Site
-                    </a>
-                    <a href="tel:0832950610" class="text-gray-orange-600 hover:text-gray-orange-800 font-semibold">
-                        📞 083 295 0610
-                    </a>
-                </div>
-            </div>
+ <!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50 border-b-2 border-gray-orange-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- flex-col on mobile, flex-row on md+ -->
+    <div class="flex flex-col md:flex-row justify-between items-center h-auto md:h-16 py-2 md:py-0 space-y-3 md:space-y-0">
+      
+      <!-- Logo + Title -->
+      <div class="flex items-center">
+        <div class="w-16 h-10 bg-brown-50 rounded-lg mr-2 flex items-center justify-center">
+          <img src="logo.svg" alt="logo" class="w-12 h-auto">
         </div>
-    </nav>
+        <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-brown-800">
+          KINGFISHER KITCHENS
+        </h1>
+      </div>
+
+      <!-- Links -->
+      <div class="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-2 sm:space-y-0">
+        <a href="index.html" class="bg-gray-orange-600 text-white px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-gray-orange-700 transition-colors w-full sm:w-auto text-center">
+          ← Back to Main Site
+        </a>
+        <a href="tel:0832950610" class="text-gray-orange-600 hover:text-gray-orange-800 font-semibold">
+          📞 083 295 0610
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-gray-orange-100 to-gray-orange-200 py-16">
